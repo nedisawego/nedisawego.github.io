@@ -91,7 +91,7 @@
 <body>
 
 <div class="split left">
-  <button class="centered" id="tombol_mulai" onclick="mulai(this)">Tunggu Instruksi Mulai</button>
+  <button class="centered" id="tombol_mulai"><p onclick="mulai()">Tunggu Instruksi Mulai</p></button>
   <div class="topped" id="kiri">
     <p id="judul">SOAL</p>
     <iframe src="Postes.htm" id="soal" frameborder="0" marginheight="0" marginwidth="0"></iframe> 
@@ -106,7 +106,8 @@
   </div>
 </div>
 <script>
-  function mulai(elmn) {
+  function mulai() {
+    var elmn = document.getElementById("tombol_mulai");
     elmn.remove();
   }
 </script>
